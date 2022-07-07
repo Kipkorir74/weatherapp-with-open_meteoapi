@@ -64,19 +64,19 @@ const HourlyWeather = (weathers) => {
                 
               </tr>
             </thead>
-            {weathers.map((weather)=>
-                    <tbody key={weather.id}>
+            
+                    <tbody >
                     <tr>
                   
-                      <td>{weather.data.hourly ? <p>{weather.data.hourly.time}</p> :null}</td>
-                      <td>{weather.data.hourly ? <p>{weather.data.hourly.temperature_2m} °C</p>:null}</td>
-                      <td>{weather.data.hourly ? <p>{weather.data.hourly.relativehumidity_2m} %</p>:null}</td>
-                      <td>{weather.data.hourly ? <p>{weather.data.hourly.cloudcover_mid} °C</p>:null}</td>
-                      <td>{weather.data.hourly ? <p>{weather.data.hourly.windspeed_120m} ms</p>:null}</td>
+                      <td>{data.hourly ? <p>{data.hourly.time}</p> :null}</td>
+                      <td>{data.hourly ? <p>{data.hourly.temperature_2m} °C</p>:null}</td>
+                      <td>{data.hourly ? <p>{data.hourly.relativehumidity_2m} %</p>:null}</td>
+                      <td>{data.hourly ? <p>{data.hourly.cloudcover_mid} °C</p>:null}</td>
+                      <td>{data.hourly ? <p>{data.hourly.windspeed_120m} ms</p>:null}</td>
                     </tr>
                     
                   </tbody>
-                )}
+                
            
         </table>
         </div>
